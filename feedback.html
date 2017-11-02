@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Обратная связь - Портфолио</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="wrapper head">
+				<a href="index.html" class="logo">Портфолио</a>
+				<menu>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Информация</a></li>
+					<li><a href="feedback.html">Обратная связь</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</menu>
+			</div>
+		</header>
+		<article>
+			<div class="wrapper">
+			<h1>Обратная связь</h1>
+				<p>
+					 Для более подробной информации можете оставить комментарий на сайте.
+ 				</p>
+ 				<label for="feedback" class="button">Обратная связь</label>
+ 				<input type="checkbox" id="feedback">
+				<div class="inline" id="form">
+					<form action="">
+						<div class="input">
+							 <label for="name">Имя:</label>
+	                        <input id="name" type="text" placeholder="Александр"  required="required">
+						</div>
+						<div class="input">
+							<label for="tel">Телефон:</label>
+	                        <input  id="tel" type="tel" list="telList" placeholder="+7 (900) 000-00-00" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"  required="required">
+	                        <datalist id="telList">
+	                            <option value="+7 (900) 123-45-67" label="Телефонный номер №1"></option>
+	                        </datalist>
+						</div>
+						<div class="input">
+							<label for="Email">Email:</label>
+	                        <input  id="E-mail" type="email" placeholder="Nanord@yandex.ru"  required="required"><br>
+						</div>
+						<div class="input txtarea">
+							<label for="Message">Ваше сообщение:</label>
+							<textarea id="msg" name="msg" class="txtarea"  placeholder="Ваше сообщение:"></textarea>
+						</div>
+						<br>
+						<div class="input button">
+							<input type="submit">
+							<input type="reset">
+						</div>
+					</form>
+				</div>
+				<div class="warning">
+						<p>
+							НЕ РАБОТАЕТ ОТПРАВКА СООБЩЕНИЙ! ВЕДУТСЯ РАБОТЫ ПО УСТРАНЕНИЮ НЕПЛОДКОВ. СПАСИБО ЗА ОЖИДАНИЕ.
+						</p>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="wrapper">
+				<div class="copyright">2016 &copy; Nanord</div>
+			</div>
+		</footer>
+	</body>
+</html>

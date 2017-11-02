@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nanord</title>
+		<link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+	</head>
+	<body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h2>
+                        <a href="main.html">
+                            <img src="../image/%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF2.png">
+                        </a> 
+                    </h2> 
+                </div>
+                <div class="menu">
+                    <a href="main.html">Главная</a>____
+                    <a href="#">Растровые</a>____  
+                    <a href="#">Векторные</a>
+                </div>    
+            </nav>
+        </header>
+        <aside>
+            <br><br><br><br><br>
+            <img src="../image/%D0%92%D0%91%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%D0%9C%D0%B5%D0%BD%D1%8E.PNG">
+            <img src="../image/%D0%92%D0%91%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%D0%9C%D0%B5%D0%BD%D1%8E2.PNG">
+            <img src="../image/%D0%92%D0%B1%D0%BE%D0%BA%D0%BE%D0%B5%D0%9C%D0%B5%D0%BD%D1%8E3.PNG">
+            <img src="../image/%D0%92%D0%91%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5%D0%9C%D0%B5%D0%BD%D1%8E4.PNG">
+        </aside>
+        <section>
+            <div class="section2">
+                <article>
+                    <form action="http://yandex.ru">
+                        <label for="text">Если что-то не понятно пишите сюда:</label>
+                        <input id="text" type="text" cols="11" name="q" autofocus>
+                        <input type="submit">
+                        <br>
+                         <label for="search">Или сюда:</label>
+                        <input  id="search" name="search">
+                        <br><br>
+                        <label for="url">Введите URL адрес:</label>
+                        <input id="url" type="url">
+                    </form>
+                    <hr width="70%" align="left">
+                    <form>
+                        <label for="name">Имя:</label>
+                        <input id="name" type="text" placeholder="Александр"  required="required"><br>
+                        <label for="tel">Телефон:</label>
+                        <input  id="tel" type="tel" list="telList" placeholder="+7 (900) 000-00-00" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"  required="required"><br>
+                        <datalist id="telList">
+                            <option value="+7 (900) 123-45-67" label="Телефонный номер №1">
+                        </datalist>
+                        <label for="Email">Email:</label>
+                        <input  id="Email" type="email" placeholder="Nanord@yandex.ru"  required="required"><br>
+                        <input type="reset">
+                        <input type="submit">
+                    </form> 
+                    <hr width="40%" align="left">
+                    <form>
+                        <label for="age">Возраст</label>
+                        <input id="age" type="number" min="18" max="120" step="0.1"><br>
+                        <label for="rost">Рост</label>
+                        <input id="rost" type="range" min="0" max="250" value="150"><br>
+                        <input type="reset">
+                        <input type="submit">
+                    </form>
+                    <hr width="27%" align="left">
+                    <form>
+                        <label for="age2">Дата рождения </label>
+                        <input id="age2" type="date" min="1900-01-01" max="2016-01-01">
+                        <label for="time">Время рождения </label>
+                        <input id="time" type="time"><br>
+                        <label for="color">Любимый цвет</label>
+                        <input id="color" type="color"><br>
+                    </form>  
+                </article>
+                <hr width="70%" align="left">
+                <article>
+                    <video width="400" height="300" controls="controls" poster="video.PNG">
+                    <source src="video.mp4" type="video/mp4">
+                    Тег video не поддерживается вашим браузером. 
+                    <a href="video/duel.mp4">Скачайте видео</a>.
+                    </video>
+                </article>
+                <hr width="70%" align="left">
+                <article>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        <a href="audio.mp3">Скачать name.mp3</a>
+                    </audio>
+                </article>
+                <hr width="70%" align="left">
+                <article>
+                    <canvas id="smile" width="200" height="200">
+                        <p>Ваш браузер не поддерживает рисование.</p>
+                    </canvas>>    
+                </article>
+            </div>    
+        </section>
+        <footer>
+            <div class="footer">
+                &copy;Nanord
+            </div>    
+        </footer>

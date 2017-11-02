@@ -1,0 +1,76 @@
+body {                         /*наследование*/
+	background: #f1f1f1;
+	font: 1em arial;
+}
+
+.title {              /*классы*/
+	color: red;    
+	font: 2em times;
+	float: right;
+}
+
+#writer {              /*идентификаторы*/
+	color: fuchsia;
+	textarea
+}
+
+dl strong {            /*контекстные селекторы*/
+	color: #0000CD;
+	
+}
+
+b + u {                    /*соседние селекторы*/
+	text-transform: uppercase;
+}
+
+tr > td {          /*Дочерние селекторы*/
+	color: blue;
+}
+
+ol[type] {           /*селекторы атрибутов*/
+	color: #006400 
+}
+
+option[value="Векторные графические редакторы"] {
+	 background: #FFF68F;
+}
+
+a[href^="http://"] {
+	color: #FFFF00;
+}
+
+form[action$=".ru"] {
+	font-family: monospace;
+}
+ input[value*=д] {
+ 	background: #FF6A6A
+ } 
+
+ *[class~="grey"] {
+ 	background: grey;
+ }
+ 
+#writer, dl strong {     /*группирование*/
+	font-family: monospace;
+}
+
+textarea:focus {     /*псевдоклассы*/
+	color: red;
+}
+
+li.alter:after {           /*псевдоэлементы*/
+	content: " - !!!!!!!!!!";
+	color: #3CB371;
+}
+h4 {
+    text-align: center;
+}
+
+
+.maineditor {
+    text-align: center;
+}
+
+.table-title {
+    text-align: center;
+}

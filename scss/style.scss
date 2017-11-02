@@ -1,0 +1,248 @@
+@import "variables";
+
+body {
+	font-family: 400 14px Verdana, Arial, sans-serif;
+	color: #333;
+	background: $background-color url(../image/background.png);
+	min-width: 700px;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	max-width: 1042.5px;
+}
+
+header,
+article,
+footer {
+	position: relative;
+	width: 100%;
+}
+
+header {
+	background: linear-gradient(to top, $background-color, lighten($background-color, 10%));
+	height: 50px;
+	box-shadow: 0 0 10px 0 #000;
+}
+
+.head {
+	.logo {
+		position: relative;
+		display: block;
+		float: left;
+		color: $main-color;
+		text-decoration: none;
+		font: 500 20px Tahoma;
+		line-height: 50px;
+		left: 0;
+		transition: left .5s, color 1s;
+		margin-left: 15px;
+
+			&:hover {
+				color: #fff;
+				left: 10px;
+			}
+	}
+
+	menu {
+		position: relative;
+		float: right;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-right: 15px;
+
+		li {
+			display: inline-block;
+
+			a {
+				display: block;
+				line-height: 50px;
+				padding: 0 10px;
+				text-decoration: none;
+				color: #fff;
+				transition: background .5s;
+
+				&:hover {
+					background: rgba(255, 255, 255, .05);
+				}
+			}
+		}
+	}
+}
+
+article {
+	padding-top: 15px;
+
+	.wrapper {
+		background: #eee;
+		border: 2px solid #eee;
+		border-radius: 10px;
+		padding: 15px;
+		box-shadow: 0 0 10px 0 #333, 0 0 10px 0 #333 inset;
+		overflow: hidden;
+
+		&:after {
+			content: '';
+			position: relative;
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		&.main {
+			padding: 0 0 15px 0;
+		}
+		//*******************************
+		//************INDEX**************
+		//*******************************
+		.lab {
+			position: relative;
+			float: left;
+			width: 327.5px;
+			margin-left: 15px;
+			margin-top: 15px;
+			height: 200px;
+			background: $background-color;
+			border-radius: 10px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: 0 0 5px 0 #333;
+			overflow: hidden;
+			text-decoration: none;
+
+			.description {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 100%;
+				padding: 15px;
+				color: #fff;
+				background: rgba(0, 0, 0, .8s);
+				transition: top .5s;
+			}
+
+			&:hover {
+				.description {
+					top: 0;
+				}
+			}
+		}
+		//*******************************
+		//************INDEX**************
+		//*******************************
+
+		//*******************************
+		//************FEEDBACK***********
+		//*******************************
+		& >.button {
+			color: #FFFFFF;
+			display: block;
+			cursor: pointer;
+			padding: 10px 11px;
+			font-size: 1.2em;
+			border: solid 1px #c83649;
+			border-radius: 2px;
+			background: #c83649;
+			width: 210px;
+			text-decoration: none;
+			text-align: center;
+			margin: 0 auto 20px;
+		}
+
+		#feedback {
+			position: absolute;
+			left: -10000px;
+
+			&:checked + #form {
+				max-height: 1000px;
+			} 
+		}
+
+		#form {
+			position: relative;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height .5s;
+		}
+
+		.inline {
+			margin-left: 30px;
+			width: 90%;
+			margin: 0 auto;
+			background: rgba(228,202,165, .9);
+			padding: 0px 20px;
+
+			&:before,
+			&:after {
+				content: '';
+				position: relative;
+				height: 20px;
+				width: 100%;
+				display: block;
+			}
+
+			.input {
+					display: inline-block;
+					color: #676767;
+					width: 190px;
+					margin-bottom: 10px;
+					border-radius: 2px;
+					padding: 5px 9px;
+					font-size: 15px!important;
+					line-height: 1.4em;
+
+					&.txtarea {
+						width: 90%;
+					}
+
+					.txtarea {
+						height: 150px;
+						width: 90%;
+					}
+			}
+		}
+		//*******************************
+		//************FEEDBACK***********
+		//*******************************
+
+		//*******************************
+		//************CONTACTS***********
+		//*******************************
+		iframe {
+			position: relative;
+			display: block;
+			float: right;
+			margin: 20px;
+		}
+		//*******************************
+		//************CONTACTS***********
+		//*******************************
+	}
+}
+
+footer {
+	.wrapper {
+		padding: 15px 0;
+
+		&:after {
+			content: '';
+			position: relative;
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		.copyright {
+			position: relative;
+			float: right;
+			font-weight: 200;
+			font-size: 14px;
+			color: #bbb;
+			margin-right: 15px;
+		}
+	}
+}
